@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d4120c4a1e1806c488a5d4c3ddaeab96
+timeCreated: 1539686951
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Super Comic
+  fontNames:
+  - Super Comic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
