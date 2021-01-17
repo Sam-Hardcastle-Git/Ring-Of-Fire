@@ -4,34 +4,25 @@ using UnityEngine;
 
 public class ObjectMove : MonoBehaviour
 {
-    #region variables
-
-    //direction enum
     public enum direction { horizontal , vertical };
     public direction objectDirection;
 
-    //boolean
     public bool positive = false;
 
-    //floats
     public float speed;
     public float boundaries;
 
-    //vector3
     public Vector3 startingPosition;
 
-    #endregion variables
-
-    #region functions
     void Start ()
     {
         startingPosition = transform.position;        
-	}
+    }
 	
-	void Update ()
+    void Update ()
     {
         Movement();
-	}
+    }
 
     void Movement()
     {
@@ -87,5 +78,4 @@ public class ObjectMove : MonoBehaviour
             #endregion horizontal
         }
     }
-    #endregion functions
 }

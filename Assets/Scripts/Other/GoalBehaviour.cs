@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GoalBehaviour : MonoBehaviour
 {
-
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.transform.tag == ("Player"))

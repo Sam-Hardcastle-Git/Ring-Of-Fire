@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class TorchSetBehaviour : MonoBehaviour
 {
-    #region variables
-    //Float
     private float flameCounter = 0;
 
-    //Bool
     public bool allLit = false;
-    #endregion variables
 
-
-    #region functions
     void Update ()
     {
         AddFlameCounter();
         OpenDoor();
-	}
+    }
 
     void AddFlameCounter()
     {
@@ -59,5 +53,4 @@ public class TorchSetBehaviour : MonoBehaviour
             }
         }
     }
-    #endregion functions
 }

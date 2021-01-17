@@ -4,27 +4,19 @@ using UnityEngine;
 
 public class PCMovement : MonoBehaviour
 {
-    #region variables
-    //floats
     public float Speed;
     private float Motion;
     public float JumpForce;
 
-    //layermask
     public LayerMask groundLayers;
 
-    //booleans
     public bool isGrounded = false;
     public bool objectOnLeft = false;
     public bool objectOnRight = false;
 
-    //direction enum
     public enum direction { left , right };
     public direction PCDirection;
 
-    #endregion variables
-
-    #region functions
     void FixedUpdate()
     {
         //if ringmode isn't active
@@ -116,6 +108,4 @@ public class PCMovement : MonoBehaviour
             break;
         }
     }
-
-    #endregion functions
 }

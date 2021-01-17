@@ -6,10 +6,10 @@ public class FlameLinger : MonoBehaviour
 {
     public float timer;
 		
-	void Update ()
+    void Update ()
     {
         Snuff();
-	}
+    }
 
     void Snuff()
     {

@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroySelf : MonoBehaviour
-{
-    #region variables
+{    
     private float timer = 0;
-    public float destroyThreshold;
-    #endregion variables
+    public float destroyThreshold;    
 
-    #region functions
     void Update ()
     {       
         timer += Time.deltaTime;
@@ -18,6 +15,5 @@ public class DestroySelf : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-	}
-    #endregion functions
+    }
 }

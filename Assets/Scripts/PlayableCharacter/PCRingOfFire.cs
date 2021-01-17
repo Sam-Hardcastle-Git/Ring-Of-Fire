@@ -4,30 +4,23 @@ using UnityEngine;
 
 public class PCRingOfFire : MonoBehaviour
 {
-    #region variables
-
-    //Floats
     private float currentAngle;
     private float rotateRate = 850;
     private float flySpeed = 32;
     private float coolDown = 0.4f;
 
-    //Bools
     private bool coolDownTriggered = false;
     public bool RingMode = false;
     
-    //Gameobjects
     public GameObject hitBox;
     public GameObject fireTrail;
-    #endregion variables
 
-    #region functions
     void Start ()
     {
         currentAngle = 0;
-	}
+    }
 	
-	void Update ()
+    void Update ()
     {                
         //when the mouse is clicked, if the ringMode has cooled and nothing is directly blocking the character...
         if (Input.GetKeyDown(KeyCode.Mouse0) && coolDown == 0.4f && !GetComponent<PCMovement>().objectOnLeft && !GetComponent<PCMovement>().objectOnRight)
@@ -161,6 +154,4 @@ public class PCRingOfFire : MonoBehaviour
             coolDownTriggered = false;
         }  
     }
-
-    #endregion functions
 }

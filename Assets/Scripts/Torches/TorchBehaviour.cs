@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class TorchBehaviour : MonoBehaviour
 {
-    #region variables
-    //booleans
     public bool ON = false;
     private bool intersected = false;
 
-    //GameObject
     public GameObject flame;
 
-    //Float
     private float timer = 0.5f;
-    #endregion variables
 
-    #region functions
     void Update ()
     {
         //set a timer if the torch is lit but the others in the set haven't
@@ -32,7 +26,7 @@ public class TorchBehaviour : MonoBehaviour
             timer = 0.5f;            
             intersected = false;            
         }
-	}
+    }
 
     void OnTriggerStay(Collider fireRing)
     {
@@ -47,5 +41,4 @@ public class TorchBehaviour : MonoBehaviour
             flameInstance.transform.parent = this.transform;    
         }
     }
-    #endregion functions
 }

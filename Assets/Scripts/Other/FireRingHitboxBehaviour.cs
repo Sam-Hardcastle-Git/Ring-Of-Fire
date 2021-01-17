@@ -3,20 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FireRingHitboxBehaviour : MonoBehaviour
-{
-    #region variables
-    //GameObjects
+{    
     private GameObject playableCharacter;
     public GameObject Blast;
 
-    //Boolean
     public bool incinerate = false;
 
-    //Float
     private float timer = 0.1f;
-    #endregion variables
-
-    #region functions
 
     void Start ()
     {
@@ -43,7 +36,5 @@ public class FireRingHitboxBehaviour : MonoBehaviour
                 Destroy(this.gameObject);
             }           
         }	
-	}
-
-    #endregion functions
+    }
 }
